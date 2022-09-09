@@ -66,29 +66,13 @@ function App() {
         { allPromotion === true && newCustomers === false ? (
           <div className='containerList'>
             {
-              // listOfPromotions.map( (item) => {
-              //     return <li key={item.id}>
-              //       <p>{item.name}</p> | <span>{JSON.stringify(item.onlyNewCustomers)}</span>
-              //       <button>{}item.joinNowButtonText</button>
-              //       <button>{item.termsAndConditionsButtonText}</button>
-              //       </li>
-              // }) 
               <PromotionCards listOfPromotnion={listOfPromotions}/>
               
             }
           </div>) : (
             <div className='containerList'>
              {
-              //  listOfNewCustomers.map( (item:Item) => {
-              //   return <li key={item.id}>
-              //             <p>{item.name}</p> | <span>{JSON.stringify(item.onlyNewCustomers)}</span>
-              //             <button>{item.joinNowButtonText}</button>
-              //             <button>{item.termsAndConditionsButtonText}</button>
-              //         </li>
-              //  }) 
-              <PromotionCards listOfPromotnion={listOfNewCustomers}/>
-
-               
+              <PromotionCards listOfPromotnion={listOfNewCustomers}/>               
              }
            </div>)
     

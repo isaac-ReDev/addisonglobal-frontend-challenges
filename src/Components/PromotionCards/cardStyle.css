@@ -1,9 +1,18 @@
 *{
+    --bg-dark-1: #2b2c30 ;
+    --bg-dark-2: #35313b ;
+    --bg-dark-3: #453745 ;
+    --color-pink-1:#ff1457;
+    --color-pink-2: #613c4c;
+}
+
+*{
     width: 100%;
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     list-style: none;
+    color: var(--color-pink-1) ;
 }
 
 .listItem{
@@ -11,8 +20,7 @@
     align-items: center;
     flex-direction: column;
     width:70%;
-    background-color: gold; 
-    
+    background-color: var(--bg-dark-1); 
 }   
 
 
@@ -21,15 +29,18 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color:var(--color-pink-1);
+    border: pink solid 1px;    
+    margin-bottom: 30px;
+
+
 }
 
-.info{
-}
 
 .info p{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: red;
+    background-color: var(--bg-dark-3);
 }
 
 .buttons{
@@ -44,17 +55,19 @@
 .buttons button{
     width: 300px;
     height: 30px;
-    background-color: white;
-    color: black;
+    background-color: var(--bg-dark-3);
+    color: var(--color-pink-1);
     font-weight: bold;
     font-size: 1rem;
-    border: black solid 1px;
+    border: var(--color-pink-2) solid 2px;
     text-decoration: none;
+    border-radius: 10px;
 
 }
 
 .buttons button:hover{
-    background-color: rgb(89, 83, 83);
-    border: white solid 1px;
-    color: white;
+    background-color: var(--color-pink-1) ;
+    border: var(--color-pink-2) solid 2px;
+    color:var(--bg-dark-1);
+    border-radius: 10px;
 }

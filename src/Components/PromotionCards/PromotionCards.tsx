@@ -21,7 +21,6 @@ export const PromotionCards = ( { listOfPromotnion }:Props ) => {
                     <div className='info'>
                         <img src={item.heroImageUrl}/>
                         <p>{item.name}</p>
-                        <p>{item.sequence}</p>
                         <p>{item.description}</p>
                     </div>
                     <div className='buttons'>

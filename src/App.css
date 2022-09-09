@@ -2,7 +2,11 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-
+    --bg-dark-1: #2b2c30 ;
+    --bg-dark-2: #35313b ;
+    --bg-dark-3: #453745 ;
+    --color-pink-1:#ff1457;
+    --color-pink-2: #613c4c;
 }
 
 .App{
@@ -11,14 +15,15 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: black;
+    background-color: var(--bg-dark-2);
 }
 
 .containerList{
     display: flex   ;
     justify-content: center;
-    background-color: rebeccapurple;
+    background-color: var(--bg-dark-2);
     padding-top: 20px;
+    
 }
 
 .btns{
@@ -28,25 +33,26 @@
     
     width: 70%;
     height: 10vh;
-    background-color: red;
+    background-color: var(--bg-dark-3);
 }
 
 .btns button{
     width: 300px;
     height: 30px;
-    background-color: white;
-    color: black;
+    background-color: var(--bg-dark-3);
+    color: var(--color-pink-1);
     font-weight: bold;
     font-size: 1rem;
-    border: black solid 1px;
+    border: --color-pink-2 solid 2px;
     text-decoration: none;
-
+    border-radius: 10px;
 }
 
 .btns button:hover{
-    background-color: rgb(89, 83, 83);
-    border: white solid 1px;
-    color: white;
+    background-color: var(--color-pink-1) ;
+    border: var(--color-pink-2) solid 2px;
+    color:var(--bg-dark-1);
+    border-radius: 10px;
 }
 
 

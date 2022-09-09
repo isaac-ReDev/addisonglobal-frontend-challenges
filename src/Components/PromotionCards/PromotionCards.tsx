@@ -8,15 +8,20 @@ type Props = {
 }
 
 export const PromotionCards = ( { listOfPromotnion }:Props ) => {
+    const lis = listOfPromotnion.sort( (a,b) => {
+        return a.sequence - b.sequence;
+    } );
+    
     return (
         <ul className='listItem'>
             {
 
-            listOfPromotnion.map( (item) => (
+            lis.map( (item) => (
                 <li className='container' key={item.id}>
                     <div className='info'>
                         <img src={item.heroImageUrl}/>
                         <p>{item.name}</p>
+                        <p>{item.sequence}</p>
                         <p>{item.description}</p>
                     </div>
                     <div className='buttons'>

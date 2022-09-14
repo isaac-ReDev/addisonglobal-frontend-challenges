@@ -9,6 +9,20 @@
     --color-pink-2: #613c4c;
 }
 
+@media (max-width: 700px){
+    .App .btns button{
+        width: 40%;
+        height: 30px;
+        background-color: var(--bg-dark-3);
+        color: var(--color-pink-1);
+        font-weight: bold;
+        font-size: 0.7rem; 
+        border: white solid 1px;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+}
+
 .App{
     display: flex;
     flex-direction: column;
@@ -29,23 +43,26 @@
 .btns{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: space-around; 
     width: 70%;
     height: 10vh;
     background-color: var(--bg-dark-3);
 }
 
-.btns button{
-    width: 300px;
+.App .btns button:nth-child(1){
+    background-color: #2a242a;
+}
+
+.App .btns button{
+    width: 50%;
     height: 30px;
     background-color: var(--bg-dark-3);
     color: var(--color-pink-1);
     font-weight: bold;
     font-size: 1rem;
-    border: --color-pink-2 solid 2px;
+    border: white solid 1px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .btns button:hover{
@@ -55,5 +72,17 @@
     border-radius: 10px;
 }
 
+.btns button:nth-child(1):hover{
+    background-color: var(--color-pink-1) ;
+    border: var(--color-pink-2) solid 2px;
+    color:var(--bg-dark-1);
+    border-radius: 10px;
+}
 
+@media (max-width:700px){
+    .App .btns button{
+        font-size: 0.6rem;
+    }
+
+}
 
